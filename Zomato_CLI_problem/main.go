@@ -10,8 +10,8 @@ import (
 func main() {
 	var cuisine string
 	fp, err := os.Open("zomato.csv")
-	fmt.Println("Enter a cuise please: ")
-	fmt.Scan(&cuisine)
+	cuisine = os.Args[2]
+	city := strings.Join(os.Args[3:], " ")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -23,7 +23,7 @@ func main() {
 		fmt.Println(err)
 	}
 	for i := range records {
-		if strings.Contains(records[i][9], cuisine) {
+		if strings.Contains(records[i][9], cuisine) && strings.Contains(records[i][3], city) {
 			fmt.Println(records[i][1])
 		}
 	}
