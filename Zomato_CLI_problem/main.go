@@ -46,6 +46,7 @@ func main() {
 		if cmd.HasTableBooking {
 			if !strings.Contains(records[i][12], "Yes") {
 				flag3 = 0
+				continue
 			}
 		}
 		if flag1*flag2*flag3 == 1 {
