@@ -11,6 +11,7 @@ import (
 
 var Cuisine string
 var City string
+var HasTableBooking bool
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -20,6 +21,7 @@ var rootCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		Cuisine, _ = cmd.Flags().GetString("cuisine")
 		City, _ = cmd.Flags().GetString("city")
+		HasTableBooking, _ = cmd.Flags().GetBool("hasTableBooking")
 	},
 }
 
@@ -31,7 +33,7 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.Flags().StringP("city", "t", "", "Enter city here:")
-	rootCmd.Flags().StringP("cuisine", "c", "", "Enter cuisine here:")
-	// rootCmd.Flags().StringP("city", "t", "", "Enter city here:")
+	rootCmd.Flags().StringP("city", "t", "default", "Enter city here:")
+	rootCmd.Flags().StringP("cuisine", "c", "default", "Enter cuisine here:")
+	rootCmd.Flags().BoolP("hasTableBooking", "r", false, "Do you want to make reservations:")
 }
