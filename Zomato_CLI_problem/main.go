@@ -3,15 +3,16 @@ package main
 import (
 	"encoding/csv"
 	"fmt"
+	"main/zomato_cli_problem/cmd"
 	"os"
 	"strings"
 )
 
 func main() {
-	var cuisine string
+
+	cmd.Execute()
+
 	fp, err := os.Open("zomato.csv")
-	cuisine = os.Args[2]
-	city := strings.Join(os.Args[3:], " ")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -23,7 +24,7 @@ func main() {
 		fmt.Println(err)
 	}
 	for i := range records {
-		if strings.Contains(records[i][9], cuisine) && strings.Contains(records[i][3], city) {
+		if strings.Contains(records[i][9], cmd.Cuisine) && strings.Contains(records[i][3], cmd.City) {
 			fmt.Println(records[i][1])
 		}
 	}
