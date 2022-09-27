@@ -27,25 +27,24 @@ func main() {
 	flag2 := 1
 	flag3 := 1
 	count := 0
+
 	for i := range records {
+		flag1, flag2, flag3 = 1, 1, 1
+
 		if cmd.Cuisine != "default" {
-			if strings.Contains(records[i][9], cmd.Cuisine) {
-				flag1 = 1
-			} else {
+			if !(strings.Contains(records[i][9], cmd.Cuisine)) {
 				flag1 = 0
+				continue
 			}
 		}
 		if cmd.City != "default" {
-			if strings.Contains(records[i][3], cmd.City) {
-				flag2 = 1
-			} else {
+			if !(strings.Contains(records[i][3], cmd.City)) {
 				flag2 = 0
+				continue
 			}
 		}
 		if cmd.HasTableBooking {
-			if strings.Contains(records[i][12], "Yes") {
-				flag3 = 1
-			} else {
+			if !strings.Contains(records[i][12], "Yes") {
 				flag3 = 0
 			}
 		}
