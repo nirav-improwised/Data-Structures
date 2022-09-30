@@ -1,4 +1,3 @@
-// ,Aggregate rating,Rating color,Rating text,Votes
 package structures
 
 type Data struct {
@@ -23,4 +22,16 @@ type Data struct {
 	RatingColor       string
 	RatingText        string
 	Votes             string
+}
+
+type TwoFieldData struct {
+	Sr_No          int
+	RestaurantName string
+	Address        string
+}
+
+type Choices struct {
+	Cuisine         string `json:"cuisine"`
+	City            string `json:"city"`
+	HasTableBooking string `json:"hasTableBooking"`
 }

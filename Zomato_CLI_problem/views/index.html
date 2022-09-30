@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="/findRestro" method="POST">
+        <div> Enter Cuisine of your choice here: <input type="text" id="cuisine" name="cuisine" value="default"></div>
+        <div>Enter City of your choice here: <input type="text" id="city" name="city" value="default"></div>
+        <div>Do you want to make reservations: <input type="radio" id="tableYes" name="hasTableBooking" value="Yes">
+        <label for="tableYes">Yes</label>
+                                        <input type="radio" id="tableNo" name="hasTableBooking" value="No">
+        <label for="tableNo">No</label></div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

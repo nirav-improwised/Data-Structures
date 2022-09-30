@@ -27,7 +27,7 @@ func TestCity(t *testing.T) {
 }
 
 func TestHasTableBooking(t *testing.T) {
-	got := methods.HasTableBooking(0, dataStructs, false)
+	got := methods.HasTableBooking(0, dataStructs, "No")
 	expect := 1
 	if got != int8(expect) {
 		t.Errorf("Expected %v got %v", expect, got)

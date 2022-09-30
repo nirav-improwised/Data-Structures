@@ -10,15 +10,11 @@ import (
 )
 
 func GeneratingStructs(records [][]string) []structures.Data {
-	// const length = len(records)
-	// var data = [length]structures.Data{}
 
-	// data := make([]structures.Data, len(records))
 	data := []structures.Data{}
 
 	for i := range records {
 
-		// s := structures.Data{records[i][0], records[i][1], records[i][2], records[i][3], records[i][4], records[i][5], records[i][6], records[i][7], records[i][8], records[i][9], records[i][10], records[i][11], records[i][12], records[i][13], records[i][14], records[i][15], records[i][16], records[i][17], records[i][18], records[i][19], records[i][20]}
 		s := structures.Data{
 			RestaurantID:      records[i][0],
 			RestaurantName:    records[i][1],
@@ -81,12 +77,34 @@ func City(i int, data []structures.Data, city string) int8 {
 	return flag
 }
 
-func HasTableBooking(i int, data []structures.Data, hTB bool) int8 {
+func HasTableBooking(i int, data []structures.Data, hTB string) int8 {
 	var flag int8 = 1
-	if hTB {
+	if hTB == "Yes" {
 		if !(strings.Contains(data[i].HasTableBooking, "Yes")) {
 			flag = 0
 		}
 	}
 	return flag
+}
+
+func StudyData(dataStructs []structures.Data, cuisine, city, hTB string) []structures.TwoFieldData {
+	count := 0
+	var returnData []structures.TwoFieldData
+	var temp structures.TwoFieldData
+	for i := range dataStructs {
+		var flag1, flag2, flag3 int8 = 1, 1, 1
+
+		flag1 = Cuisine(i, dataStructs, cuisine)
+		flag2 = City(i, dataStructs, city)
+		flag3 = HasTableBooking(i, dataStructs, hTB)
+
+		if flag1*flag2*flag3 == 1 {
+			count++
+			temp.Sr_No = count
+			temp.RestaurantName = dataStructs[i].RestaurantName
+			temp.Address = dataStructs[i].Address
+			returnData = append(returnData, temp)
+		}
+	}
+	return returnData
 }
