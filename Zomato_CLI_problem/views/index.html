@@ -7,7 +7,7 @@
     <title>form</title>
 </head>
 <body>
-    <form action="/findRestro" method="POST">
+    <form action="/findRestro" method="GET">
         <div> Enter Cuisine of your choice here: <input type="text" id="cuisine" name="cuisine" value="default"></div>
         <div>Enter City of your choice here: <input type="text" id="city" name="city" value="default"></div>
         <div>Do you want to make reservations: <input type="radio" id="tableYes" name="hasTableBooking" value="Yes">
@@ -15,6 +15,7 @@
                                         <input type="radio" id="tableNo" name="hasTableBooking" value="No">
         <label for="tableNo">No</label></div>
         <input type="submit" value="Submit">
+        
     </form>
 </body>
 </html>

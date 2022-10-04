@@ -8,8 +8,10 @@ import (
 )
 
 func setupRoute(app *fiber.App) {
-	app.Post("/findRestro", findRestro.FindR)
-	app.Get("/", findRestro.FindForm)
+	app.Post("/restro", findRestro.AddR)
+	app.Get("/restro", findRestro.FindR)
+	app.Delete("/restro", findRestro.DeleteR)
+	app.Put("/restro", findRestro.UpdateR)
 }
 
 func main() {

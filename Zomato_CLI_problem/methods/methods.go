@@ -3,6 +3,7 @@ package methods
 import (
 	"encoding/csv"
 	"fmt"
+	"reflect"
 	"strings"
 
 	"main/structures"
@@ -107,4 +108,86 @@ func StudyData(dataStructs []structures.Data, cuisine, city, hTB string) []struc
 		}
 	}
 	return returnData
+}
+
+func ConvertedData(newR structures.Data) [][]string {
+	v := reflect.ValueOf(newR)
+	temp := make([]string, v.NumField())
+	var values [][]string
+	for i := 0; i < v.NumField(); i++ {
+		x := v.Field(i)
+		temp[i] = x.String()
+	}
+	values = append(values, temp)
+	return (values)
+}
+
+func AddData(mainStr [][]string) string {
+	fp, err := os.OpenFile("/home/nirav/workspace/src/DataStrcutures/Zomato_CLI_problem/zomato.csv", os.O_APPEND|os.O_WRONLY, os.ModeAppend)
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer fp.Close()
+	w := csv.NewWriter(fp)
+	w.UseCRLF = true
+	w.WriteAll(mainStr)
+
+	return "Data Added"
+}
+
+func DeleteData(id string, records [][]string) string {
+	flag := 0
+	message := ""
+	e := os.Remove("zomato.csv")
+	if e != nil {
+		fmt.Println(e)
+	}
+	fp, err := os.Create("zomato.csv")
+	if err != nil {
+		fmt.Println(err)
+	}
+	w := csv.NewWriter(fp)
+	for i := range records {
+		if id != records[i][0] {
+			w.Write(records[i])
+		} else {
+			flag = 1
+		}
+	}
+	w.Flush()
+	fp.Close()
+
+	if flag == 1 {
+		message = fmt.Sprintf("%v Record Deleted Succuessfully", id)
+	} else {
+		message = "Record not found, kindly enter appropriate ID"
+	}
+	return message
+}
+
+func UpdateData(queryData structures.Data, records [][]string) string {
+
+	for i := range records {
+		if queryData.RestaurantID == records[i][0] {
+			v := reflect.ValueOf(queryData)
+			for j := 0; j < v.NumField(); j++ {
+				x := v.Field(j)
+				if !x.IsZero() {
+					records[i][j] = x.String()
+				}
+			}
+			break
+		}
+	}
+	e := os.Remove("zomato.csv")
+	if e != nil {
+		fmt.Println(e)
+	}
+	fp, err := os.Create("zomato.csv")
+	if err != nil {
+		fmt.Println(err)
+	}
+	w := csv.NewWriter(fp)
+	w.WriteAll(records)
+	return fmt.Sprintf("%v Data Updated successfully", queryData.RestaurantID)
 }
