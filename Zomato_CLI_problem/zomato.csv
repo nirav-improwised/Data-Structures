@@ -1,6 +1,6 @@
 Restaurant ID,Restaurant Name,Country Code,City,Address,Locality,Locality Verbose,Longitude,Latitude,Cuisines,Average Cost for two,Currency,Has Table booking,Has Online delivery,Is delivering now,Switch to order menu,Price range,Aggregate rating,Rating color,Rating text,Votes
-6317637,Nirav's Restro Park,162,Makati City,"Third Floor, Century City Mall, Kalayaan Avenue, Poblacion, Makati City","Century City Mall, Poblacion, Makati City","Century City Mall, Poblacion, Makati City, Makati City",121.027535,14.565443,"French, Japanese, Desserts",1100,Botswana Pula(P),Yes,No,No,No,3,4.8,Dark Green,Excellent,314
-6304287,Izakaya Kikufuji,162,Makati City,"Little Tokyo, 2277 Chino Roces Avenue, Legaspi Village, Makati City","Little Tokyo, Legaspi Village, Makati City","Little Tokyo, Legaspi Village, Makati City, Makati City",121.014101,14.553708,Japanese,1200,Botswana Pula(P),Yes,No,No,No,3,4.5,Dark Green,Excellent,591
+6317637,Nirav's Restro Country,162,Makati City,"Third Floor, Century City Mall, Kalayaan Avenue, Poblacion, Makati City","Century City Mall, Poblacion, Makati City","Century City Mall, Poblacion, Makati City, Makati City",121.027535,14.565443,"French, Japanese, Desserts",1100,Botswana Pula(P),Yes,Yes,Yes,No,3,4.8,Dark Green,Excellent,314
+6304287,Izakaya Kikufuji,162,Makati City,"Little Tokyo, 2277 Chino Roces Avenue, Legaspi Village, Makati City","Little Tokyo, Legaspi Village, Makati City","Little Tokyo, Legaspi Village, Makati City, Makati City",121.014101,14.553708,Japanese,1200,Botswana Pula(P),Yes,No,Yes,No,3,4.5,Dark Green,Excellent,591
 6300002,Heat - Edsa Shangri-La,162,Mandaluyong City,"Edsa Shangri-La, 1 Garden Way, Ortigas, Mandaluyong City","Edsa Shangri-La, Ortigas, Mandaluyong City","Edsa Shangri-La, Ortigas, Mandaluyong City, Mandaluyong City",121.056831,14.581404,"Seafood, Asian, Filipino, Indian",4000,Botswana Pula(P),Yes,No,No,No,4,4.4,Green,Very Good,270
 6318506,Ooma,162,Mandaluyong City,"Third Floor, Mega Fashion Hall, SM Megamall, Ortigas, Mandaluyong City","SM Megamall, Ortigas, Mandaluyong City","SM Megamall, Ortigas, Mandaluyong City, Mandaluyong City",121.056475,14.585318,"Japanese, Sushi",1500,Botswana Pula(P),No,No,No,No,4,4.9,Dark Green,Excellent,365
 6314302,Sambo Kojin,162,Mandaluyong City,"Third Floor, Mega Atrium, SM Megamall, Ortigas, Mandaluyong City","SM Megamall, Ortigas, Mandaluyong City","SM Megamall, Ortigas, Mandaluyong City, Mandaluyong City",121.057508,14.58445,"Japanese, Korean",1500,Botswana Pula(P),Yes,No,No,No,4,4.8,Dark Green,Excellent,229
@@ -9542,18 +9542,47 @@ Opp. Dominos and ICICI BANK Sector 48",Sector 49,"Sector 49, Noida",77.375287,28
 6004089,D�_vero��lu,208,Ankara,"Maltepe Mahallesi, Gen�_lik Caddesi, No 28, �ankaya, Ankara",Maltepe,"Maltepe, Ankara",32.84274167,39.92253611,"Kebab, Desserts, Turkish Pizza",70,Turkish Lira(TL),No,No,No,No,3,4.4,Green,Very Good,131
 6000921,D�_vero��lu,208,Ankara,"��mitk�_y Mahallesi, 2432. Cadde (8. Cadde), No 113, �ankaya, Ankara",��mitk�_y,"��mitk�_y, Ankara",32.701775,39.89156389,"Kebab, Desserts, Turkish Pizza",70,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,152
 6004813,Pizza ��l Forno,208,Ankara,"Y۱ld۱zevler Mahallesi, 720. Sokak, No 2/B, �ankaya, Ankara",Y۱ld۱zevler,"Y۱ld۱zevler, Ankara",32.86021667,39.87623889,Pizza,40,Turkish Lira(TL),No,No,No,No,2,4.7,Dark Green,Excellent,104
-5904116,J'adore Chocolatier,208,��stanbul,"Asmal۱mescit Mahallesi, ��stiklal Caddesi, Emir Nevruz Sokak, No 2/H, Beyo��lu, ��stanbul",Asmal۱mescit,"Asmal۱mescit, ��stanbul",28.97612661,41.03300186,Desserts,50,Turkish Lira(TL),No,No,No,No,2,4.7,Dark Green,Excellent,1311
-5901782,Starbucks,208,��stanbul,"Bebek Mahallesi, Cevdetpa��a Caddesi, No 30/A, Be��ikta��, ��stanbul",Bebek,"Bebek, ��stanbul",29.04373437,41.07769599,Cafe,30,Turkish Lira(TL),No,No,No,No,2,4.9,Dark Green,Excellent,1042
-5902117,Valonia,208,��stanbul,"T�_rkali Mahallesi, Ihlamurdere Caddesi, No 40/B, Be��ikta��, ��stanbul",Be��ikta�� Merkez,"Be��ikta�� Merkez, ��stanbul",29.0028964,41.04481318,"Restaurant Cafe, Desserts",80,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,874
-5927248,Draft Gastro Pub,208,��stanbul,"Caddebostan Mahallesi, Ba��dat Caddesi, No 349, Kat 1, Kad۱k�_y, ��stanbul",Caddebostan,"Caddebostan, ��stanbul",29.07411609,40.96393456,Bar Food,130,Turkish Lira(TL),No,No,No,No,4,4.9,Dark Green,Excellent,522
-5905215,Emirgan S�_ti��,208,��stanbul,"Emirgan Mahallesi, Sak۱p Sabanc۱ Caddesi, No 46, Sar۱yer, ��stanbul",Emirg��n,"Emirg��n, ��stanbul",29.05662037,41.10496881,"Restaurant Cafe, Turkish, Desserts",75,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,877
-5926979,Leman K�_lt�_r,208,��stanbul,"Cafera��a Mahallesi, Ne��et �_mer Sokak, No 9/A, Kad۱k�_y, ��stanbul",Kad۱k�_y Merkez,"Kad۱k�_y Merkez, ��stanbul",29.02280476,40.98970497,Restaurant Cafe,80,Turkish Lira(TL),No,No,No,No,3,3.7,Yellow,Good,506
-5916085,Dem Karak�_y,208,��stanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, Hoca Tahsin Sokak, No 17, Beyo��lu, ��stanbul",Karak�_y,"Karak�_y, ��stanbul",28.9782365,41.02463331,Cafe,35,Turkish Lira(TL),No,No,No,No,2,4.5,Dark Green,Excellent,761
-5915547,Karak�_y G�_ll�_o��lu,208,��stanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, R۱ht۱m Caddesi, Katl۱ Otopark Alt۱, No 4, Beyo��lu, ��stanbul",Karak�_y,"Karak�_y, ��stanbul",28.97763569,41.02290443,"Desserts, B�_rek",40,Turkish Lira(TL),No,No,No,No,2,4.7,Dark Green,Excellent,1305
-5915054,Baltazar,208,��stanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, K۱l۱�_ Ali Pa��a Mescidi Sokak, No 12/A, Beyo��lu, ��stanbul",Karak�_y,"Karak�_y, ��stanbul",28.98110311,41.02578494,"Burger, Izgara",90,Turkish Lira(TL),No,No,No,No,3,4.3,Green,Very Good,870
-5915730,Naml۱ Gurme,208,��stanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, R۱ht۱m Caddesi, No 1/1, Katl۱ Otopark Alt۱,  Beyo��lu, ��stanbul",Karak�_y,"Karak�_y, ��stanbul",28.97739161,41.02279314,Turkish,80,Turkish Lira(TL),No,No,No,No,3,4.1,Green,Very Good,788
-5908749,Ceviz A��ac۱,208,��stanbul,"Ko��uyolu Mahallesi, Muhittin ��st�_nda�� Caddesi, No 85, Kad۱k�_y, ��stanbul",Ko��uyolu,"Ko��uyolu, ��stanbul",29.04129725,41.00984672,"World Cuisine, Patisserie, Cafe",105,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,1034
-5915807,Huqqa,208,��stanbul,"Kuru�_e��me Mahallesi, Muallim Naci Caddesi, No 56, Be��ikta��, ��stanbul",Kuru�_e��me,"Kuru�_e��me, ��stanbul",29.03464001,41.05581715,"Italian, World Cuisine",170,Turkish Lira(TL),No,No,No,No,4,3.7,Yellow,Good,661
-5916112,A���k Kahve,208,��stanbul,"Kuru�_e��me Mahallesi, Muallim Naci Caddesi, No 64/B, Be��ikta��, ��stanbul",Kuru�_e��me,"Kuru�_e��me, ��stanbul",29.036019,41.057979,Restaurant Cafe,120,Turkish Lira(TL),No,No,No,No,4,4,Green,Very Good,901
-5927402,Walter's Coffee Roastery,208,��stanbul,"Cafea��a Mahallesi, Bademalt۱ Sokak, No 21/B, Kad۱k�_y, ��stanbul",Moda,"Moda, ��stanbul",29.02601603,40.98477563,Cafe,55,Turkish Lira(TL),No,No,No,No,2,4,Green,Very Good,591
+5904116,J'adore Chocolatier,208,Istanbul,"Asmal۱mescit Mahallesi, ��stiklal Caddesi, Emir Nevruz Sokak, No 2/H, Beyo��lu, Istanbul",Asmal۱mescit,"Asmal۱mescit, Istanbul",28.97612661,41.03300186,Desserts,50,Turkish Lira(TL),No,No,No,No,2,4.7,Dark Green,Excellent,1311
+5901782,Starbucks,208,Istanbul,"Bebek Mahallesi, Cevdetpa��a Caddesi, No 30/A, Be��ikta��, Istanbul",Bebek,"Bebek, Istanbul",29.04373437,41.07769599,Cafe,30,Turkish Lira(TL),No,No,No,No,2,4.9,Dark Green,Excellent,1042
+5902117,Valonia,208,Istanbul,"T�_rkali Mahallesi, Ihlamurdere Caddesi, No 40/B, Be��ikta��, Istanbul",Be��ikta�� Merkez,"Be��ikta�� Merkez, Istanbul",29.0028964,41.04481318,"Restaurant Cafe, Desserts",80,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,874
+5927248,Draft Gastro Pub,208,Istanbul,"Caddebostan Mahallesi, Ba��dat Caddesi, No 349, Kat 1, Kad۱k�_y, Istanbul",Caddebostan,"Caddebostan, Istanbul",29.07411609,40.96393456,Bar Food,130,Turkish Lira(TL),No,No,No,No,4,4.9,Dark Green,Excellent,522
+5905215,Emirgan S�_ti��,208,Istanbul,"Emirgan Mahallesi, Sak۱p Sabanc۱ Caddesi, No 46, Sar۱yer, Istanbul",Emirg��n,"Emirg��n, Istanbul",29.05662037,41.10496881,"Restaurant Cafe, Turkish, Desserts",75,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,877
+5926979,Leman K�_lt�_r,208,Istanbul,"Cafera��a Mahallesi, Ne��et �_mer Sokak, No 9/A, Kad۱k�_y, Istanbul",Kad۱k�_y Merkez,"Kad۱k�_y Merkez, Istanbul",29.02280476,40.98970497,Restaurant Cafe,80,Turkish Lira(TL),No,No,No,No,3,3.7,Yellow,Good,506
+5916085,Dem Karak�_y,208,Istanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, Hoca Tahsin Sokak, No 17, Beyo��lu, Istanbul",Karak�_y,"Karak�_y, Istanbul",28.9782365,41.02463331,Cafe,35,Turkish Lira(TL),No,No,No,No,2,4.5,Dark Green,Excellent,761
+5915547,Karak�_y G�_ll�_o��lu,208,Istanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, R۱ht۱m Caddesi, Katl۱ Otopark Alt۱, No 4, Beyo��lu, Istanbul",Karak�_y,"Karak�_y, Istanbul",28.97763569,41.02290443,"Desserts, B�_rek",40,Turkish Lira(TL),No,No,No,No,2,4.7,Dark Green,Excellent,1305
+5915054,Baltazar,208,Istanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, K۱l۱�_ Ali Pa��a Mescidi Sokak, No 12/A, Beyo��lu, Istanbul",Karak�_y,"Karak�_y, Istanbul",28.98110311,41.02578494,"Burger, Izgara",90,Turkish Lira(TL),No,No,No,No,3,4.3,Green,Very Good,870
+5915730,Naml۱ Gurme,208,Istanbul,"Kemanke�� Karamustafa Pa��a Mahallesi, R۱ht۱m Caddesi, No 1/1, Katl۱ Otopark Alt۱,  Beyo��lu, Istanbul",Karak�_y,"Karak�_y, Istanbul",28.97739161,41.02279314,Turkish,80,Turkish Lira(TL),No,No,No,No,3,4.1,Green,Very Good,788
+5908749,Ceviz A��ac۱,208,Istanbul,"Ko��uyolu Mahallesi, Muhittin ��st�_nda�� Caddesi, No 85, Kad۱k�_y, Istanbul",Ko��uyolu,"Ko��uyolu, Istanbul",29.04129725,41.00984672,"World Cuisine, Patisserie, Cafe",105,Turkish Lira(TL),No,No,No,No,3,4.2,Green,Very Good,1034
+5915807,Huqqa,208,Istanbul,"Kuru�_e��me Mahallesi, Muallim Naci Caddesi, No 56, Be��ikta��, Istanbul",Kuru�_e��me,"Kuru�_e��me, Istanbul",29.03464001,41.05581715,"Italian, World Cuisine",170,Turkish Lira(TL),No,No,No,No,4,3.7,Yellow,Good,661
+5927402,Walter's Coffee Roastery,208,Istanbul,"Cafea��a Mahallesi, Bademalt۱ Sokak, No 21/B, Kad۱k�_y, Istanbul",Moda,"Moda, Istanbul",29.02601603,40.98477563,Cafe,55,Turkish Lira(TL),No,No,No,No,2,4,Green,Very Good,591
 21212121,Nirav's Restro Park,162,Rajkot,"Nirav, Bansari Society Street 8, Behind KVR Kalawad Road Shri Ram Park Main Road",Rajkot,Santa Rosa,121.0565874,14.23767897,"Bhajiya, Gathiya",250,Indian Rupee,No,No,No,No,3,4,Green,Very Good,72
+595959,Nirav's Restro Park,162,Rajkot,"Nirav, Bansari Society Street 8, Behind KVR Kalawad Road Shri Ram Park Main Road",Rajkot,Santa Rosa,121.0565874,14.23767897,"Bhajiya, Gathiya",250,Indian Rupee,No,No,No,No,3,4,Green,Very Good,72
+595960,Nirav's Restro Park,162,Rajkot,"Nirav, Bansari Society Street 8, Behind KVR Kalawad Road Shri Ram Park Main Road",Rajkot,Santa Rosa,121.0565874,14.23767897,"Bhajiya, Gathiya",250,Indian Rupee,No,No,No,No,3,4,Green,Very Good,72
+585858,5,5,5,5,5,5,5,5,5,5,5,Yes,Yes,Yes,Yes,5-50,4.2,green,good,500
+585958,5,5,5,5,5,5,5,5,5,5,5,Yes,Yes,Yes,Yes,5-50,4.2,green,good,500
+585958,5,5,5,5,5,5,5,5,5,5,5,Yes,Yes,Yes,Yes,5-50,4.2,green,good,500
+585958,5,5,5,5,5,5,5,5,5,5,5,Yes,Yes,Yes,Yes,5-50,4.2,green,good,500
+987987,9,9,9,999,9,9,9,9,9,9,99,Yes,Yes,Yes,Yes,9-99,4.2,green,good,500
+988999,9,9,9,99,9,9,9,9,9,9,9,Yes,Yes,Yes,No,9-99,4.2,green,good,500
+545454,5,5,5,5,5,5,5,5,5,5,5,No,Yes,No,Yes,5-555,4.2,green,good,500
+5454545,,,,,,,,,,,,,,,,0-0,4.2,green,good,500
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+980980,Nirav's Restro Park,162,Rajkot,"Nirav, Bansari Society Street 8, Behind KVR Kalawad Road Shri Ram Park Main Road",Rajkot,Santa Rosa,121.0565874,14.23767897,"Bhajiya, Gathiya",250,Indian Rupee,No,No,No,No,3,4,Green,Very Good,72
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+9595959,,,,,,,,,,,,,,,,0-0,4.2,green,good,500
+97979797,CORS enabled Fiber,73272736,Stakeoverflow,https://stackoverflow.com/questions/73272736/cors-error-for-golang-fiber-with-react-front-end,Internet,no-verbose,727.36,723,"golang, fiber, cors, solution",9.0,Free,Yes,Yes,Yes,Yes,0-99990,4.2,green,good,500
+991122,useFetch Try,91,city,address,locatily,verbose,longitude,latitude,Japanese,100,Indian Rupee,Yes,Yes,Yes,Yes,10-1000,4.2,green,good,500
+991122,useFetch Try,91,city,address,locatily,verbose,longitude,latitude,Japanese,100,Indian Rupee,Yes,Yes,Yes,Yes,10-1000,4.2,green,good,500
+991122,useFetch Try,91,city,address,locatily,verbose,longitude,latitude,Japanese,100,Indian Rupee,Yes,Yes,Yes,Yes,10-1000,4.2,green,good,500
+991122,,,,,,,,,,,,,,,,0-0,4.2,green,good,500
+991122,,,,,,,,,,,,,,,,0-0,4.2,green,good,500

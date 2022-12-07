@@ -30,6 +30,15 @@ type TwoFieldData struct {
 	Address        string
 }
 
+type FourFieldData struct {
+	Sr_No          int
+	Cuisine        string
+	Currency       string
+	RestaurantName string
+	Address        string
+	City           string
+}
+
 type Choices struct {
 	Cuisine         string `json:"cuisine"`
 	City            string `json:"city"`

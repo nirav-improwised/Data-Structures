@@ -56,11 +56,12 @@ func GetRecords() [][]string {
 	if err != nil {
 		fmt.Println(err)
 	}
+	Records = Records[1:]
 	return Records
 }
 func Cuisine(i int, data []structures.Data, cuisine string) int8 {
 	var flag int8 = 1
-	if cuisine != "default" {
+	if cuisine != "" {
 		if !(strings.Contains(data[i].Cuisines, cuisine)) {
 			flag = 0
 		}
@@ -70,7 +71,7 @@ func Cuisine(i int, data []structures.Data, cuisine string) int8 {
 
 func City(i int, data []structures.Data, city string) int8 {
 	var flag int8 = 1
-	if city != "default" {
+	if city != "" {
 		if !(strings.Contains(data[i].City, city)) {
 			flag = 0
 		}
@@ -88,22 +89,37 @@ func HasTableBooking(i int, data []structures.Data, hTB string) int8 {
 	return flag
 }
 
-func StudyData(dataStructs []structures.Data, cuisine, city, hTB string) []structures.TwoFieldData {
+func HasOnlineDelivery(i int, data []structures.Data, hOD string) int8 {
+	var flag int8 = 1
+	if hOD == "Yes" {
+		if !(strings.Contains(data[i].HasOnlineDelivery, "Yes")) {
+			flag = 0
+		}
+	}
+	return flag
+}
+
+func StudyData(dataStructs []structures.Data, cuisine, city, hTB, hOD string) []structures.Data {
 	count := 0
-	var returnData []structures.TwoFieldData
-	var temp structures.TwoFieldData
+	var returnData []structures.Data
+	var temp structures.Data
 	for i := range dataStructs {
-		var flag1, flag2, flag3 int8 = 1, 1, 1
+		var flag1, flag2, flag3, flag4 int8 = 1, 1, 1, 1
 
 		flag1 = Cuisine(i, dataStructs, cuisine)
 		flag2 = City(i, dataStructs, city)
 		flag3 = HasTableBooking(i, dataStructs, hTB)
+		flag4 = HasOnlineDelivery(i, dataStructs, hOD)
 
-		if flag1*flag2*flag3 == 1 {
+		if flag1*flag2*flag3*flag4 == 1 {
 			count++
-			temp.Sr_No = count
-			temp.RestaurantName = dataStructs[i].RestaurantName
-			temp.Address = dataStructs[i].Address
+			// temp.Sr_No = count
+			// temp.RestaurantName = dataStructs[i].RestaurantName
+			// temp.Address = dataStructs[i].Address
+			// temp.City = dataStructs[i].City
+			// temp.Cuisine = dataStructs[i].Cuisines
+			// temp.Currency = dataStructs[i].Currency
+			temp = dataStructs[i]
 			returnData = append(returnData, temp)
 		}
 	}
@@ -122,17 +138,32 @@ func ConvertedData(newR structures.Data) [][]string {
 	return (values)
 }
 
-func AddData(mainStr [][]string) string {
-	fp, err := os.OpenFile("/home/nirav/workspace/src/DataStrcutures/Zomato_CLI_problem/zomato.csv", os.O_APPEND|os.O_WRONLY, os.ModeAppend)
-	if err != nil {
-		fmt.Println(err)
+func CheckExistingData(dataStructs []structures.Data, item structures.Data) bool {
+	var returnValue bool = true
+	for i := range dataStructs {
+		if item.RestaurantID == dataStructs[i].RestaurantID {
+			returnValue = false
+			break
+		}
 	}
-	defer fp.Close()
-	w := csv.NewWriter(fp)
-	w.UseCRLF = true
-	w.WriteAll(mainStr)
+	return returnValue
+}
 
-	return "Data Added"
+func AddData(mainStr [][]string, existFlag bool) string {
+	if existFlag {
+		fp, err := os.OpenFile("/home/nirav/workspace/src/DataStrcutures/Zomato_CLI_problem/zomato.csv", os.O_APPEND|os.O_WRONLY, os.ModeAppend)
+		if err != nil {
+			fmt.Println(err)
+		}
+		defer fp.Close()
+		w := csv.NewWriter(fp)
+		w.UseCRLF = true
+		w.WriteAll(mainStr)
+
+		return "Data Added"
+	} else {
+		return "Record already exist."
+	}
 }
 
 func DeleteData(id string, records [][]string) string {
